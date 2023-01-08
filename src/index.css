@@ -1,13 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  h1 {
+    @apply text-5xl;
+  }
+}
+@layer utilities {
+  h1 {
+    @apply text-5xl;
+  }
+  .text-soto {
+    font-size: 20px;
+  }
+}
+@layer components {
+  h1 {
+    @apply text-5xl;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+@responsive {
+  .bg-kalasada {
+    background-color: red;
+  }
+}
+
+.btn-style {
+  @apply rounded-full border border-purple-200 
+  px-4 py-1 text-sm font-semibold
+  text-black-900 hover:border-transparent hover:bg-pink-600 hover:text-white
+  focus:outline-none focus:ring-4;
+}
+
+@variants hover {
+  .rotate-0 {
+  }
+}
+
+.mybg {
+  background: linear-gradient(97.65deg, #68bbee, 0.33%, #0a72ad 93.35%);
+}
+.black-gard {
+  background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
+}
+.blue-gard {
+  background: linear-gradient(
+    97.73deg,
+    #399fd8 -6.96%,
+    #0775b4 23.5%,
+    #003756 92.79%
+  );
+}
+.mybg {
+  background-image: url("Assets/soleMate.png");
 }
